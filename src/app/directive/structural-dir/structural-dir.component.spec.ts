@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { StructuralDirComponent } from './structural-dir.component';
+import { StructuralDirComponent } from './structural-dir.component'; 
 
 describe('StructuralDirComponent', () => {
   let component: StructuralDirComponent;

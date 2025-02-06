@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { StructuralDirComponent } from './directive/structural-dir/structural-dir.component';
+import { StructuralDirComponent } from './directive/structural-dir/structural-dir.component'; 
+
 
 @Component({
   selector: 'app-root',

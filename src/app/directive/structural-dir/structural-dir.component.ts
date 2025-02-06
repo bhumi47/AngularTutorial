@@ -10,39 +10,41 @@ import { FormsModule } from '@angular/forms';
 })
 export class StructuralDirComponent {
    
-  isDiv1Visible: boolean = true;
-  isDiv2Visible: boolean = false;
-
+  div1BgColor: string = 'bg-primary';
+  isDiv2Active: boolean = false;
   num1: string = '';
-  num2: string= '';
+  num2: string = '';
+  isActive :boolean = false;
 
-  isActive: boolean = true;
-  selectedState: string ='';
+  customerStyle: any = {
+      'color':'white',
+      'background-color': 'red',
+      'width' : '200px',
+      'height' : '200px',
+      'border-radius' : '50%'
+  };
 
-  cityArray : string [] = ['Pune', 'Mumbai', 'Nagpur', 'Thane'];
   studentList : any[] = [
-    {studeId: 15, name: 'AAA', city: 'Pune', isActive: false},
-    {studeId: 21, name: 'BBB', city: 'Mumbai', isActive: false},
-    {studeId: 32, name: 'CCC', city: 'jalgaon', isActive: true},
-    {studeId: 40, name: 'DDD', city: 'Thane', isActive: false},
-    {studeId: 50, name: 'EEE', city: 'Nagpur', isActive: false},
-    {studeId: 63, name: 'FFF', city: 'Pune', isActive: true},
-  ]
+    
+      {studeId: 15,totalMarks:23, gender: 'male', name: 'AAA', city: 'Pune', isActive: false},   	
+      {studeId: 21,totalMarks:56, gender: 'female', name: 'BBB', city: 'Mumbai', isActive: false},
+      {studeId: 32,totalMarks:34, gender: 'female', name: 'CCC', city: 'jalgaon', isActive: true},
+      {studeId: 40,totalMarks:65, gender: 'male', name: 'DDD', city: 'Thane', isActive: false},
+      {studeId: 50,totalMarks:21, gender: 'male', name: 'EEE', city: 'Nagpur', isActive: false},
+      {studeId: 63,totalMarks:33, gender: 'female', name: 'FFF', city: 'Pune', isActive: true},
+  
+    ]
 
-  showDiv1(){
-    this.isDiv1Visible = true;
+  addRedClass(){
+        this.div1BgColor = "bg-danger";
   }
-  hideDiv1(){
-    this.isDiv1Visible = false;
-  }
-  toggleDiv2(){
-    // this.isDiv2Visible = !this.isDiv2Visible;
-
-    if(this.isDiv2Visible == true){
-      this.isDiv2Visible =false;
-    }else{
-      this.isDiv2Visible = true;
-    }
+  addBlueClass(){
+        this.div1BgColor = "bg-primary"
   }
 
+  toggleDiv2class(){
+       this.isDiv2Active = ! this.isDiv2Active;
+  }
+
+ 
 }
