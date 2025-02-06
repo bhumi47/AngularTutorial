@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-structural-dir',
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, RouterLink],
   templateUrl: './structural-dir.component.html',
   styleUrl: './structural-dir.component.css'
 })
@@ -34,6 +35,8 @@ export class StructuralDirComponent {
       {studeId: 63,totalMarks:33, gender: 'female', name: 'FFF', city: 'Pune', isActive: true},
   
     ]
+
+   
 
   addRedClass(){
         this.div1BgColor = "bg-danger";

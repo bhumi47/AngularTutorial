@@ -1,4 +1,31 @@
-<!-- <h1>Hello</h1> -->
-<!-- <app-databinding></app-databinding> -->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark" style="user-select: auto;">
+    <div class="container-fluid" style="user-select: auto;">
+      <a class="navbar-brand" href="javascript:void(0)" style="user-select: auto;">Logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" style="user-select: auto;">
+        <span class="navbar-toggler-icon" style="user-select: auto;"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar" style="user-select: auto;">
+        <ul class="navbar-nav me-auto" style="user-select: auto;">
+          <li class="nav-item" style="margin-top: -12px; user-select: auto;">
+            <a class="nav-link active" routerLink="emp-list" style="user-select: auto;">Employee List</a>
+          </li>
+          <li class="nav-item" style="margin-top: -12px; user-select: auto;">
+            <a class="nav-link" routerLink="add-emp" style="user-select: auto;">Add Employee</a>
+          </li>
+          <li class="nav-item" style="margin-top: -12px; user-select: auto;">
+            <a class="nav-link" routerLink="structural-dir" style="user-select: auto;">Structural Dir</a>
+          </li>
+        </ul>
+        <form class="d-flex" style="user-select: auto;">
+          <input class="form-control me-2" type="text" placeholder="Search" style="user-select: auto;">
+          <button class="btn btn-primary" type="button" style="user-select: auto;">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 
-<app-structural-dir></app-structural-dir>
+  <div class="container"></div>
+
+  <!-- <a class="nav-link" href="javascript:void(0)" style="user-select: auto;">Structural Dir</a> -->
+
+  <router-outlet></router-outlet>
