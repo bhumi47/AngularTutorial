@@ -6,6 +6,7 @@ import { StructuralDirComponent } from './directive/structural-dir/structural-di
 import { IfelseComponent } from './controlFlow/ifelse/ifelse.component';
 import { ForComponent } from './controlFlow/for/for.component';
 import { SwitchComponent } from './controlFlow/switch/switch.component';
+import { PipeComponent } from './components/pipe/pipe.component';
 
 export const routes: Routes = [
     {
@@ -36,5 +37,9 @@ export const routes: Routes = [
     {
         path: 'switch-case',
         component: SwitchComponent
+    },
+    {
+        path: 'Pipe',
+        component : PipeComponent
     }
 ];

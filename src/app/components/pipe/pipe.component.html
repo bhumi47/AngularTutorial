@@ -1,0 +1,115 @@
+<div class = "mt-2 p-2 bg-secondary text-white rounded">
+    <h1>Pipe In Angular</h1>
+    <h3>Default Pipe & Custom Pipe</h3>
+</div>
+
+<div class="row">
+    <div class = "col-3">
+         Original Value - {{firstName}}
+         <br/>
+         after Pipe - {{firstName | uppercase}}
+    </div>
+    <div class = "col-3">
+        Original Value - {{firstName}}
+        <br/>
+        after Pipe - {{firstName | lowercase}}
+   </div>
+   <div class = "col-3">
+    Original Value - {{secName}}
+    <br/>
+    after Pipe - {{secName | titlecase}}
+    </div>
+<div class = "col-3">
+        Original Value - {{currentDate}}
+        <br/>
+        after Pipe - {{currentDate | date}}
+</div>
+<div class = "col-3">
+    Original Value - {{currentDate | date: 'dd-MM-yyyy'}}
+    <br/>
+    after Pipe - {{currentDate | date: 'dd-MM-yy'}}
+</div>
+<div class = "col-3">
+    Original Value - {{currentDate | date: 'dd-MMM-yy'}}
+    <br/>
+    after Pipe - {{currentDate | date: 'dd/MMM/yy'}}
+</div>
+<div class = "col-3">
+    Original Value - {{currentDate | date: 'dd-MMM-yy'}}
+    <br/>
+    after Pipe - {{currentDate | date: 'dd/MMM/yy'}}
+</div>
+<div class = "col-3">
+    Original Value - {{student}}
+    <br/>
+    after Pipe - {{student | json}}
+</div>
+<div class = "col-3">
+    Original Value - {{currentTime}}
+    <br/>
+    after Pipe - {{currentTime | async |date: 'hh:mm:ss'}}
+</div>
+<div class = "col-3">
+    Original Value - {{student.state}}
+    <br/>
+    after Pipe - {{student.state |na}}
+</div>
+</div>
+    
+<!-- </div>
+<div class="row">
+    <div class = "col-3">
+         <ul>
+             @for(item of cityArray; track $index){
+                <li>{{item}}</li>
+             } 
+         </ul>
+    </div>
+    <div class = "col-3">
+        @for(item of cityArray; track $index){
+            <div >{{item}}</div>
+        }  
+    </div>
+    <div class = "col-3">
+        <select >
+            @for(item of cityArray; track $index){
+                <option>{{item}}</option>
+            }
+        </select>
+    </div>
+    <div class = "col-3">
+        <select >
+            @for(item of studentList; track $index){
+                <option [value] = "item.studId">{{item.name}}</option>
+            } 
+        </select>
+    </div>
+    </div>
+
+    <div class="row">
+        <div class = "col-5">
+            <table class = "table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Sr No</th>
+                        <th>Name</th>
+                        <th>City</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for(item of studentList; track $index){
+                        <tr>
+                            <td>{{$index+1}}</td>
+                            <td>{{item.name}}</td>
+                            <td>{{item.city}}</td>
+                            <td>{{item.status}}</td>
+                        </tr>
+                    }
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+ -->
