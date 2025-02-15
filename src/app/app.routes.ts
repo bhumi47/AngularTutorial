@@ -9,6 +9,7 @@ import { SwitchComponent } from './controlFlow/switch/switch.component';
 import { PipeComponent } from './components/pipe/pipe.component';
 import { TemplateComponent } from './forms/template/template.component';
 import { ReactiveComponent } from './forms/reactive/reactive.component';
+import { GetApiComponent } from './apiIntegration/get-api/get-api.component';
 
 export const routes: Routes = [
     {
@@ -48,5 +49,10 @@ export const routes: Routes = [
         path: 'Forms',
         // component : TemplateComponent
         component : ReactiveComponent
+    },
+    {
+        path: 'Get',
+        component: 
+        GetApiComponent
     }
 ];
